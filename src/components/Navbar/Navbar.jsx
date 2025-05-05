@@ -19,7 +19,10 @@ const Navbar = () => {
                     {links}
                 </ul>
                 </div>
-                <a className="btn btn-ghost text-2xl font-bold">Subscription Box</a>
+                <div className='flex gap-2 items-center'>
+                    <img className='w-12 h-10' src="https://img.icons8.com/fluency/96/subscription.png" alt="subscription"/>
+                    <a className="btn btn-ghost text-2xl font-bold">Subscription Box</a>
+                </div>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1 text-lg">

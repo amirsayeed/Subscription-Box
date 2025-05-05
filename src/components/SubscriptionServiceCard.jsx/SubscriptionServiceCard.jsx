@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const SubscriptionServiceCard = ({subData}) => {
     const {thumbnail,name,tech_category,price,frequency} = subData;
@@ -12,10 +13,10 @@ const SubscriptionServiceCard = ({subData}) => {
         <div className="card-body space-y-2">
             <h2 className="text-2xl font-semibold">{name}</h2>
             <p>Category: {tech_category}</p>
-            <p>Price: {price}</p>
+            <p>Price: ${price}</p>
             <p>Frequency: {frequency}</p>
             <div className="card-actions">
-            <button className="btn btn-primary w-full">View More</button>
+            <Link to={`/subscriptionService/${subData.id}`} className="btn btn-primary w-full">View More</Link>
             </div>
         </div>
         </div>

@@ -3,20 +3,24 @@
         "id": 1,
         "name": "Smart Home Box",
         "thumbnail": "https://i.ibb.co.com/5hKv1rtS/H7566892028244479a23f4c13498e1f60-U.webp",
-        "banner": "https://example.com/images/smart-home-box-banner.jpg",
+        "banner": "https://i.ibb.co.com/HDX46Sxh/71yhw-NQCHTL.jpg",
         "frequency": "Yearly",
         "price": 199.99,
-        "description": "Transform your home into a smart home with curated smart devices, home automation products, and IoT gadgets.",
+        "description": "Revolutionize your living space with our comprehensive Smart Home Box, delivering the latest in home automation technology right to your doorstep. Each carefully curated box includes 3-5 premium smart devices ranging from intelligent lighting systems and voice-controlled assistants to advanced security cameras and energy monitoring tools. Our experts test hundreds of products to select only the most reliable, innovative solutions that work seamlessly together. Perfect for both smart home beginners looking to dip their toes into home automation and tech enthusiasts wanting to expand their existing ecosystem. Includes detailed setup guides, customization tips, and access to our smart home consultant team.",
         "tech_category": "Smart Home",
         "features": [
             "Smart Home Devices",
             "Home Automation Tools",
-            "Cutting-edge IoT Gadgets"
+            "Cutting-edge IoT Gadgets",
+            "Professional Installation Guides",
+            "Compatibility Assurance"
         ],
         "subscription_benefits": [
-            "Discount on Future Smart Home Purchases",
-            "Exclusive Smart Home Tutorials",
-            "Early Access to Product Releases"
+            "15% Discount on Future Smart Home Purchases",
+            "Exclusive Smart Home Tutorials and Webinars",
+            "Early Access to Product Releases",
+            "Priority Technical Support",
+            "Monthly Smart Home Optimization Tips"
         ],
         "ratings": 4.8,
         "number_of_reviews": 315
@@ -25,20 +29,24 @@
         "id": 2,
         "name": "Gamer's Paradise",
         "thumbnail": "https://i.ibb.co.com/mVWCKNdD/Screenshot-2025-01-25-100746-470x233.png",
-        "banner": "https://example.com/images/gaming-box-banner.jpg",
+        "banner": "https://i.ibb.co.com/n8zrpcPM/01-gamers-paradise-emad-navidii.jpg",
         "frequency": "Monthly",
         "price": 49.99,
-        "description": "Monthly delivery of the hottest gaming gear, accessories, and exclusive in-game content.",
+        "description": "Elevate your gaming experience with our monthly Gamer's Paradise subscription, packed with high-performance gear and exclusive content. Each delivery contains a mix of premium peripherals (keyboards, mice, headsets), ergonomic accessories, game codes, and collectible merchandise valued at over $100. We partner with top esports athletes to test and approve every item. The box theme changes monthly (FPS month, RPG month, etc.) with corresponding in-game bonuses. Subscribers gain entry to our competitive gaming ladder with monthly tournaments featuring cash prizes. Perfect for casual gamers looking to upgrade their setup and hardcore competitors seeking an edge.",
         "tech_category": "Gaming",
         "features": [
             "Premium Gaming Peripherals",
             "Collector's Edition Items",
-            "Game Download Codes"
+            "Game Download Codes",
+            "Ergonomic Accessories",
+            "Performance-enhancing Tools"
         ],
         "subscription_benefits": [
-            "Exclusive Beta Access",
-            "Gamer Community Membership",
-            "Priority Tech Support"
+            "Exclusive Beta Access to Upcoming Titles",
+            "Gamer Community Membership with Discord Channels",
+            "Priority 24/7 Tech Support",
+            "Monthly Gaming Tournaments",
+            "Hardware Performance Optimization Guides"
         ],
         "ratings": 4.6,
         "number_of_reviews": 428
@@ -47,20 +55,24 @@
         "id": 3,
         "name": "Tech Gadget Box",
         "thumbnail": "https://i.ibb.co.com/zVS11wgn/810p-JCOZEVL.jpg",
-        "banner": "https://example.com/images/tech-gadget-banner.jpg",
+        "banner": "https://i.ibb.co.com/cKXmXxh0/6179c3082800008e63a74481.jpg",
         "frequency": "Quarterly",
         "price": 89.99,
-        "description": "Curated selection of the most innovative tech gadgets and accessories delivered every quarter.",
+        "description": "Stay at the forefront of technology with our quarterly Tech Gadget Box, featuring the most innovative and practical devices on the market. Each season, our team of tech analysts scours global markets to bring you groundbreaking products that solve real-world problems. Past boxes have included portable projectors, AI-powered translators, solar-powered chargers, and smart notebooks. Every item comes with detailed usage scenarios and creative application ideas. We focus on gadgets that are both functional and conversation-starting, ensuring you'll always have the coolest tech among your friends. Includes access to our 'Tech Insider' portal with behind-the-scenes looks at product development.",
         "tech_category": "Electronics",
         "features": [
             "Cutting-edge Gadgets",
             "Limited Edition Tech",
-            "Accessory Bundles"
+            "Accessory Bundles",
+            "Global Market Finds",
+            "Multi-functional Devices"
         ],
         "subscription_benefits": [
-            "VIP Tech Concierge",
-            "Exclusive Product Demos",
-            "Members-only Discounts"
+            "VIP Tech Concierge Service",
+            "Exclusive Product Demos with Developers",
+            "Members-only Discounts (Up to 30% Off)",
+            "Invitations to Tech Launch Events",
+            "Quarterly Tech Trend Reports"
         ],
         "ratings": 4.7,
         "number_of_reviews": 192
@@ -69,20 +81,24 @@
         "id": 4,
         "name": "Coding Essentials",
         "thumbnail": "https://i.ibb.co.com/XrD6yQSq/bitsbox-product-photo.jpg",
-        "banner": "https://example.com/images/coding-kit-banner.jpg",
+        "banner": "https://i.ibb.co.com/RTjRkJbf/81o-HX5w-XKw-L.jpg",
         "frequency": "Monthly",
         "price": 29.99,
-        "description": "Monthly delivery of tools, resources, and gadgets to supercharge your programming workflow.",
+        "description": "Boost your programming productivity with our monthly Coding Essentials subscription, designed by developers for developers. Each shipment contains practical tools to enhance your workflow: mechanical keyboards with programmable macros, ergonomic mouse alternatives, blue light glasses, USB hubs, and other workstation upgrades. Includes digital bonuses like curated algorithm challenges, IDE theme packs, and productivity templates. Our 'Dev Tools of the Month' section introduces you to powerful but lesser-known utilities and libraries. Perfect for computer science students, freelance developers, and engineering teams looking to optimize their development environment. Subscribers receive our famous 'Bug Hunting' checklist that has helped reduce debugging time by 40% for our members.",
         "tech_category": "Programming",
         "features": [
             "Developer Tools",
             "Programming Books",
-            "Ergonomic Accessories"
+            "Ergonomic Accessories",
+            "Workstation Upgrades",
+            "Digital Resource Packs"
         ],
         "subscription_benefits": [
-            "Access to Private Code Repos",
-            "Exclusive Webinars",
-            "Early IDE Plugin Access"
+            "Access to Private Code Repositories",
+            "Exclusive Webinars with Tech Leaders",
+            "Early Access to IDE Plugins",
+            "Monthly Coding Challenge with Prizes",
+            "Pair Programming Matching Service"
         ],
         "ratings": 4.9,
         "number_of_reviews": 312
@@ -91,20 +107,24 @@
         "id": 5,
         "name": "Photography Pro Kit",
         "thumbnail": "https://i.ibb.co.com/VcyvVcC0/images-q-tbn-ANd9-Gc-Tcfhjub-N0u-GNhzvw-BX2ivn-MVq-Y2-G42e-Jsbag-s.jpg",
-        "banner": "https://example.com/images/photo-kit-banner.jpg",
+        "banner": "https://i.ibb.co.com/SXNWwKjY/DSC-0255-5a418fae-07e6-4270-9e30-f78be821a793-900x.jpg",
         "frequency": "Quarterly",
         "price": 129.99,
-        "description": "Professional-grade photography tools and accessories delivered seasonally.",
+        "description": "Transform your photography with our seasonal Pro Kit, curated by award-winning photographers. Each box contains professional-grade accessories tailored to the season: winter features low-light tools and cold-weather gear, summer includes vibrant filters and portable reflectors. Expect lens attachments, specialized cleaning kits, unique mounting solutions, and innovative lighting equipment. Our exclusive 'Shoot Like a Pro' guidebooks break down advanced techniques into actionable steps. The subscription includes access to our critique portal where industry professionals provide personalized feedback on your work. Perfect for aspiring photographers ready to move beyond smartphone cameras and DSLR owners looking to maximize their equipment's potential. Value of contents always exceeds subscription price.",
         "tech_category": "Photography",
         "features": [
             "Lens Accessories",
             "Lighting Equipment",
-            "Carrying Solutions"
+            "Carrying Solutions",
+            "Specialized Cleaning Kits",
+            "Creative Effect Tools"
         ],
         "subscription_benefits": [
-            "Photo Editing Presets",
-            "Masterclass Access",
-            "Equipment Insurance"
+            "Premium Photo Editing Presets",
+            "Masterclass Access with Famous Photographers",
+            "Equipment Insurance Up to $500",
+            "Seasonal Photo Challenges",
+            "Printing Service Discounts"
         ],
         "ratings": 4.5,
         "number_of_reviews": 178
@@ -113,20 +133,24 @@
         "id": 6,
         "name": "Audio Enthusiast Pack",
         "thumbnail": "https://i.ibb.co.com/tp4t0fHH/images-q-tbn-ANd9-Gc-TAEs-OGPNj2xxtvy8-To-Ciq-NIGuk-pge-siha-Ec-NS9ocw-NBk-f-Vm-Xf9y-C4xp-MZuf4n-Ws.jpg",
-        "banner": "https://example.com/images/audio-pack-banner.jpg",
+        "banner": "https://i.ibb.co.com/XkvkXWTf/ENTHUSIASTPACKUPDATEDIMAGE.png",
         "frequency": "Monthly",
         "price": 79.99,
-        "description": "Premium audio equipment and accessories for audiophiles and music producers.",
+        "description": "Immerse yourself in premium sound with our Audio Enthusiast Pack, designed for true audiophiles and music producers. Each month explores a different aspect of audio perfection: one month focuses on headphone technology, another on room acoustics, then recording equipment, and so on. Receive high-fidelity headphones, DACs, amplifiers, acoustic treatment panels, and studio-grade cables - all selected by our team of audio engineers. Includes exclusive vinyl pressings and high-resolution digital tracks to test your new gear. Our signature 'Sound Signature Profile' service analyzes your hearing preferences to recommend perfect equipment matches. Perfect for music lovers who appreciate nuance in their listening experience and creators demanding professional-grade recording tools.",
         "tech_category": "Audio Equipment",
         "features": [
             "High-End Headphones",
             "Studio Accessories",
-            "Audio Enhancement Tools"
+            "Audio Enhancement Tools",
+            "Room Acoustics Solutions",
+            "Professional Recording Gear"
         ],
         "subscription_benefits": [
-            "Exclusive Music Releases",
+            "Exclusive Music Releases in High-Resolution Formats",
             "Sound Engineering Tutorials",
-            "VIP Event Invites"
+            "VIP Event Invites to Audio Shows",
+            "Equipment Loaner Program",
+            "Personalized Audio Setup Consultations"
         ],
         "ratings": 4.8,
         "number_of_reviews": 264
