@@ -20,7 +20,7 @@ const SubscriptionServiceDetails = () => {
     const {name,banner,frequency,number_of_reviews,ratings,subscription_benefits,features,tech_category,description,price} = serviceInfo;
 
     return (
-        <div className="hero bg-base-200 min-h-screen">
+        <div className="hero bg-base-200 min-h-screen py-10">
         <div className="hero-content flex-col lg:flex-row gap-5 items-start">
             <div>
                 <img
@@ -45,16 +45,16 @@ const SubscriptionServiceDetails = () => {
                 {description}
             </p>
             <div className='flex flex-col md:flex-row justify-between'>
-                <div>
-                    <p>Features:</p>
+                <div className='space-y-1'>
+                    <p className='text-lg font-semibold'>Features:</p>
                     <ul className='list-disc list-inside'>
                     {
                         features.map((feature,idx)=><li key={idx}>{feature}</li>)
                     }
                 </ul>
                 </div>
-                <div>
-                    <p>Benefits:</p>
+                <div className='space-y-1'>
+                    <p className='text-lg font-semibold'>Benefits:</p>
                     <ul className='list-disc list-inside'>
                     {
                         subscription_benefits.map((benefit,idx)=><li key={idx}>{benefit}</li>)
