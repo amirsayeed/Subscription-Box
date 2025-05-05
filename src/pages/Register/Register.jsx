@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 import { AuthContext } from '../../provider/AuthProvider';
 
 const Register = () => {
-    const {signUp,googleSignIn} = useContext(AuthContext);
+    const {signUp,googleSignIn,setUser} = useContext(AuthContext);
 
     const handleRegister = e =>{
         e.preventDefault();
@@ -13,18 +13,20 @@ const Register = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         //console.log(email,password,name,photo);
-        // signUp(email,password).then(result=>{
-        //     console.log(result.user);
-        // })
-        // .catch(error=>{
-        //     console.log(error);
-        // })
+        signUp(email,password).then(result=>{
+            console.log(result.user);
+            setUser(result.user)
+        })
+        .catch(error=>{
+            console.log(error);
+        })
         
     }
 
     const handleGoogleLogin = () =>{
         googleSignIn().then(result=>{
             console.log(result.user);
+            setUser(result.user)
         })
         .catch(error=>{
             console.log(error);
@@ -41,11 +43,11 @@ const Register = () => {
                 <label className="text-sm mt-2">Photo URL</label>
                 <input type="text" name="photo" id="photo" placeholder="Photo URL" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800" />
 
-                <label className="text-sm mt-2">Email address</label>
-                <input type="email" name="email" id="email" placeholder="leroy@jenkins.com" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800" />
+                <label className="text-sm mt-2">Email address*</label>
+                <input type="email" name="email" id="email" placeholder="leroy@jenkins.com" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800" required/>
                     
-                <label className="text-sm mt-2">Password</label>       
-                <input type="password" name="password" id="password" placeholder="*****" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800" />
+                <label className="text-sm mt-2">Password*</label>       
+                <input type="password" name="password" id="password" placeholder="*****" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800" required/>
                 <p className="my-1 text-sm text-center dark:text-gray-600">Already have an account?
                 <Link to='/auth/login' className="hover:underline text-blue-400"> Login</Link>
                 </p>
