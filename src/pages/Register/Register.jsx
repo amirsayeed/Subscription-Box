@@ -1,11 +1,12 @@
 import React, { useContext } from 'react';
 import { FcGoogle } from 'react-icons/fc';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import { AuthContext } from '../../provider/AuthProvider';
+import { toast } from 'react-toastify';
 
 const Register = () => {
     const {signUp,googleSignIn,setUser} = useContext(AuthContext);
-
+    const navigate = useNavigate();
     const handleRegister = e =>{
         e.preventDefault();
         const name = e.target.name.value;
@@ -15,10 +16,13 @@ const Register = () => {
         //console.log(email,password,name,photo);
         signUp(email,password).then(result=>{
             console.log(result.user);
-            setUser(result.user)
+            setUser(result.user);
+            toast.success("Registration successful!");
+            navigate('/');
         })
         .catch(error=>{
             console.log(error);
+            toast.error("Registration failed!");
         })
         
     }
@@ -26,7 +30,9 @@ const Register = () => {
     const handleGoogleLogin = () =>{
         googleSignIn().then(result=>{
             console.log(result.user);
-            setUser(result.user)
+            setUser(result.user);
+            toast.success("Registration successful!");
+            navigate('/');
         })
         .catch(error=>{
             console.log(error);

@@ -1,6 +1,7 @@
 import React, { use } from 'react';
 import { Link, NavLink } from 'react-router';
 import { AuthContext } from '../../provider/AuthProvider';
+import { FaUserCircle } from 'react-icons/fa';
 
 const Navbar = () => {
     const {user,logOut} = use(AuthContext);
@@ -45,8 +46,8 @@ const Navbar = () => {
             <div className="navbar-end">
                 {user ? 
                 <div className='flex gap-2'>
-                    <div className="tooltip tooltip-bottom" data-tip={user.displayName}>
-                        <img className='w-10 h-10 rounded-full' src={user.photoURL} alt="" />
+                    <div className="tooltip tooltip-bottom" data-tip={user?.displayName}>
+                        {user?.photoURL ? <img className='w-10 h-10 rounded-full' src={user.photoURL} alt="" /> : <FaUserCircle size={40} />}
                     </div> 
                     <button onClick={handleLogOut} className='btn btn-primary'>Logout</button>
                 </div> :

@@ -1,26 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import { useLoaderData, useParams } from 'react-router';
-import Loading from '../../components/Loading/Loading'
-import CustomerReview from '../CustomerReview/CustomerReview';
-import SubscriptionServiceDetailsCard from './SubscriptionServiceDetailsCard';
-const SubscriptionServiceDetails = () => {
+import React from 'react';
+import { toast } from 'react-toastify';
 
-    const {id} = useParams();
-    const detailsData = useLoaderData()
-    const [serviceInfo, setServiceInfo] = useState();
+const SubscriptionServiceDetailsCard = ({serviceInfo}) => {
+    const {name,banner,frequency,number_of_reviews,ratings,subscription_benefits,features,tech_category,description,price} = serviceInfo;
 
-    useEffect(()=>{
-        const serviceDetail = detailsData.find(detail=>detail.id == id);
-        setServiceInfo(serviceDetail);
-    },[detailsData,id])
-
-    if(!serviceInfo){
-        return <Loading/>;
+    const handleSubscribe = () =>{
+        toast.success("Congratulations! Subscribed successfully.")
     }
-
     return (
-        <div className='bg-base-200 pb-10'>
-        {/* <div className="hero min-h-screen py-10">
+        <div className="hero min-h-screen py-10">
         <div className="hero-content flex-col lg:flex-row gap-5 items-start">
             <div>
                 <img
@@ -31,16 +19,16 @@ const SubscriptionServiceDetails = () => {
             <div className='flex flex-col gap-2'>
             <h1 className="text-5xl font-bold">{name}</h1>
             <div className='flex gap-5'>
-                <p>{ratings}/5</p>
-                <p>Reviews: {number_of_reviews}</p>
+                <p className='font-semibold'>Rating: {ratings}/5</p>
+                <p className='font-semibold'>Reviews: {number_of_reviews}</p>
             </div>
             
             <div className='flex gap-5'>
-                <p>${price}</p>
-                <span> / </span>
-                <p>{frequency}</p>
+                <p className='text-2xl font-semibold'>${price}</p>
+                <span className='text-2xl'> / </span>
+                <p className='text-2xl font-semibold'> {frequency}</p>
             </div>
-            <p>Category: {tech_category}</p>
+            <p className='font-medium'>Category: {tech_category}</p>
             <p className="py-4">
                 {description}
             </p>
@@ -64,21 +52,13 @@ const SubscriptionServiceDetails = () => {
             </div>
               
             <div className='flex justify-center mt-4'>
-                <button className="btn btn-primary max-w-sm">Subscribe</button>
+                <button onClick={handleSubscribe} className="btn btn-primary max-w-60 px-8">Subscribe</button>
             </div>
             
             </div>
-        </div>
-        </div> */}
-        <div>
-            <SubscriptionServiceDetailsCard serviceInfo={serviceInfo}/>
-        </div>
-        <div className='mt-4 space-y-3'>
-            <h2 className="text-2xl font-bold text-center">Customer's Review</h2>
-            <CustomerReview/>
         </div>
         </div>
     );
 };
 
-export default SubscriptionServiceDetails;
+export default SubscriptionServiceDetailsCard;
