@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router';
 import Loading from '../../components/Loading/Loading'
+import CustomerReview from '../CustomerReview/CustomerReview';
 const SubscriptionServiceDetails = () => {
     const {id} = useParams();
     const detailsData = useLoaderData()
@@ -20,7 +21,8 @@ const SubscriptionServiceDetails = () => {
     const {name,banner,frequency,number_of_reviews,ratings,subscription_benefits,features,tech_category,description,price} = serviceInfo;
 
     return (
-        <div className="hero bg-base-200 min-h-screen py-10">
+        <div className='bg-base-200 pb-10'>
+        <div className="hero min-h-screen py-10">
         <div className="hero-content flex-col lg:flex-row gap-5 items-start">
             <div>
                 <img
@@ -44,7 +46,7 @@ const SubscriptionServiceDetails = () => {
             <p className="py-4">
                 {description}
             </p>
-            <div className='flex flex-col md:flex-row justify-between'>
+            <div className='flex flex-col md:flex-row justify-between gap-4'>
                 <div className='space-y-1'>
                     <p className='text-lg font-semibold'>Features:</p>
                     <ul className='list-disc list-inside'>
@@ -62,10 +64,17 @@ const SubscriptionServiceDetails = () => {
                 </ul>
                 </div>
             </div>
-            
-            
-            <button className="btn btn-primary">Get Started</button>
+              
+            <div className='flex justify-center mt-4'>
+                <button className="btn btn-primary max-w-sm">Subscribe</button>
             </div>
+            
+            </div>
+        </div>
+        </div>
+        <div className='mt-4 space-y-3'>
+            <h2 className="text-2xl font-bold text-center">Customer's Review</h2>
+            <CustomerReview/>
         </div>
         </div>
     );

@@ -11,6 +11,7 @@ import AuthLayout from "../layouts/AuthLayout";
 import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import ContactUs from "../pages/Contact Us/ContactUs";
+import PrivateRoute from "../provider/PrivateRoute";
 
 export const router = createBrowserRouter([
     {
@@ -31,11 +32,11 @@ export const router = createBrowserRouter([
           path: '/subscriptionService/:id',
           loader: ()=>fetch('../subscription.json'),
           hydrateFallbackElement: <Loading/>,
-          Component: SubscriptionServiceDetails
+          element: <PrivateRoute><SubscriptionServiceDetails/></PrivateRoute>
         },
         {
           path: 'contactUs',
-          Component: ContactUs
+          element: <PrivateRoute><ContactUs/></PrivateRoute>
         }
       ]
     },

@@ -1,5 +1,8 @@
 import React from 'react';
-
+import { BsFacebook } from "react-icons/bs";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaYoutube } from "react-icons/fa6";
+import { FaLinkedin } from "react-icons/fa";
 const Footer = () => {
     return (
         <>
@@ -32,7 +35,7 @@ const Footer = () => {
             </nav>
             <nav>
                 <h6 className="footer-title">Social</h6>
-                <div className="grid grid-flow-col gap-4">
+                {/* <div className="grid grid-flow-col gap-4">
                 <a>
                     <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -66,7 +69,21 @@ const Footer = () => {
                         d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
                     </svg>
                 </a>
-                </div>
+                </div> */}
+                 <div className="grid grid-flow-col gap-6">
+                        <a href="https://www.facebook.com/" target="_blank">
+                        <BsFacebook size={25} />
+                        </a>
+                        <a href="https://x.com/" target="_blank">
+                        <FaSquareXTwitter size={25} />
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank">
+                        <FaLinkedin size={25} />
+                        </a>
+                        <a href="https://www.youtube.com/" target="_blank">
+                        <FaYoutube size={25} />
+                        </a>
+                    </div>
             </nav>
         </footer>
         <footer className="footer sm:footer-horizontal border-t border-dashed footer-center bg-neutral text-neutral-content p-5">
