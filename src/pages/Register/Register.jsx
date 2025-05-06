@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext} from 'react';
 import { FcGoogle } from 'react-icons/fc';
 import { Link, useNavigate } from 'react-router';
 import { AuthContext } from '../../provider/AuthProvider';
@@ -7,6 +7,7 @@ import { toast } from 'react-toastify';
 const Register = () => {
     const {signUp,googleSignIn,setUser} = useContext(AuthContext);
     const navigate = useNavigate();
+    
     const handleRegister = e =>{
         e.preventDefault();
         const name = e.target.name.value;
@@ -14,6 +15,14 @@ const Register = () => {
         const email = e.target.email.value;
         const password = e.target.password.value;
         //console.log(email,password,name,photo);
+
+        const passRegex = /^(?=.*[A-Z])(?=.*[a-z]).{6,}$/;
+        if(!passRegex.test(password)){
+            const msg = 'Password must contain at least one uppercase letter, one lowercase letter and be at least 6 characters long.';
+            toast.error(msg);
+            return;
+        }
+        
         signUp(email,password).then(result=>{
             console.log(result.user);
             setUser(result.user);
@@ -22,7 +31,7 @@ const Register = () => {
         })
         .catch(error=>{
             console.log(error);
-            toast.error("Registration failed!");
+            toast.error(error.message);
         })
         
     }
@@ -36,8 +45,10 @@ const Register = () => {
         })
         .catch(error=>{
             console.log(error);
+            toast(error.message);
         })
     }
+
     return (
         <div className="flex flex-col mx-auto max-w-md p-6 rounded-md sm:p-10 dark:bg-gray-50 dark:text-gray-800">
             <h1 className="my-3 text-4xl font-bold text-center">Register</h1>
@@ -54,6 +65,7 @@ const Register = () => {
                     
                 <label className="text-sm mt-2">Password*</label>       
                 <input type="password" name="password" id="password" placeholder="*****" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800" required/>
+
                 <p className="my-1 text-sm text-center dark:text-gray-600">Already have an account?
                 <Link to='/auth/login' className="hover:underline text-blue-400"> Login</Link>
                 </p>

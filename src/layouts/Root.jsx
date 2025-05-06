@@ -9,7 +9,7 @@ const Root = () => {
             <header>
                 <Navbar/>
             </header>
-            <main>
+            <main className='min-h-[calc(100%-353px)]'>
                 <Outlet/>
             </main>
             <footer>

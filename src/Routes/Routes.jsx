@@ -12,6 +12,7 @@ import Login from "../pages/Login/Login";
 import Register from "../pages/Register/Register";
 import ContactUs from "../pages/Contact Us/ContactUs";
 import PrivateRoute from "../provider/PrivateRoute";
+import ForgetPassword from "../pages/ForgetPassword/ForgetPassword";
 
 export const router = createBrowserRouter([
     {
@@ -47,6 +48,10 @@ export const router = createBrowserRouter([
         {
           path:'/auth/login',
           Component: Login
+        },
+        {
+          path:'/auth/forgetPassword',
+          Component: ForgetPassword
         },
         {
           path:'/auth/register',

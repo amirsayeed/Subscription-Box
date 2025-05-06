@@ -48,7 +48,7 @@ const Login = () => {
                     
                 <label className="text-sm mt-2">Password</label>       
                 <input type="password" name="password" id="password" placeholder="*****" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800" />
-                <Link className="text-xs my-1 hover:underline dark:text-gray-600">Forgot password?</Link>
+                <Link to='/auth/forgetPassword' className="text-xs my-1 hover:underline dark:text-gray-600">Forgot password?</Link>
                 <button type='submit' className="btn btn-primary w-full text-white rounded-md">Log in</button>
             </form>
             <div className="space-y-2 mt-2">
