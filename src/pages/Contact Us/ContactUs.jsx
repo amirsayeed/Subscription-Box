@@ -8,11 +8,11 @@ const ContactUs = () => {
     
     return (
         <div className="min-h-screen flex items-center justify-center dark:bg-gray-100 dark:text-gray-900">
-            <div className="grid max-w-7xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
+            <div className="flex-1 grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
                 <div className="py-6 md:py-0 md:px-6">
                     <h1 className="text-4xl font-bold">Get in touch</h1>
                     <p className="pt-2 pb-4">Fill in the form to start a conversation</p>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                    <div className="grid grid-cols-1 gap-3">
                         <div className="flex flex-col border p-2 rounded-2xl max-w-64 items-center justify-center gap-3">
                             <span><ImLocation2 size={25}/></span>
                             <span className='text-center'>House 123, Road 4, Dhanmondi, Dhaka 1209, Bangladesh</span>

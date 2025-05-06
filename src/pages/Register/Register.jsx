@@ -1,12 +1,15 @@
-import React, { useContext} from 'react';
+import React, { useContext, useState} from 'react';
 import { FcGoogle } from 'react-icons/fc';
 import { Link, useNavigate } from 'react-router';
 import { AuthContext } from '../../provider/AuthProvider';
 import { toast } from 'react-toastify';
+import { FaEye, FaEyeSlash } from 'react-icons/fa';
+
 
 const Register = () => {
     const {signUp,googleSignIn,setUser} = useContext(AuthContext);
     const navigate = useNavigate();
+    const [showPassword, setShowPassword] = useState(false);
     
     const handleRegister = e =>{
         e.preventDefault();
@@ -63,8 +66,21 @@ const Register = () => {
                 <label className="text-sm mt-2">Email address*</label>
                 <input type="email" name="email" id="email" placeholder="leroy@jenkins.com" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800" required/>
                     
-                <label className="text-sm mt-2">Password*</label>       
-                <input type="password" name="password" id="password" placeholder="*****" className="w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800" required/>
+                
+                <label className="text-sm mt-2">Password*</label> 
+                <div className='relative'>      
+                <input
+                    type={showPassword ? 'text' : 'password'}
+                    name='password'
+                    className="input w-full px-3 py-2 border rounded-md dark:border-gray-300 dark:bg-gray-50 dark:text-gray-800"
+                    placeholder="Password" required />
+                    <span onClick={() => { setShowPassword(!showPassword) }}
+                        className='absolute top-3 right-8'>
+                    {
+                        showPassword ? <FaEyeSlash size={20}/>: <FaEye size={20}/>
+                    }
+                    </span>
+                </div>
 
                 <p className="my-1 text-sm text-center dark:text-gray-600">Already have an account?
                 <Link to='/auth/login' className="hover:underline text-blue-400"> Login</Link>

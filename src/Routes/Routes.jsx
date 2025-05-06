@@ -13,17 +13,19 @@ import Register from "../pages/Register/Register";
 import ContactUs from "../pages/Contact Us/ContactUs";
 import PrivateRoute from "../provider/PrivateRoute";
 import ForgetPassword from "../pages/ForgetPassword/ForgetPassword";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
 
 export const router = createBrowserRouter([
     {
       path: "/",
-      Component: Root,
+      element: <Root/>,
       children: [
         {
           index:true,
           loader: ()=>fetch('../subscription.json'),
           hydrateFallbackElement: <Loading/>, 
-          Component: Home
+          element: <Home/>
         },
         {
           path: 'profile',
@@ -43,24 +45,25 @@ export const router = createBrowserRouter([
     },
     {
       path:'/auth',
-      Component: AuthLayout,
+      element: <AuthLayout/>,
       children: [
         {
           path:'/auth/login',
-          Component: Login
+          element: <Login/>
         },
         {
-          path:'/auth/forgetPassword',
-          Component: ForgetPassword
+          path:'/auth/forgetPassword/:email',
+          element: <ForgetPassword/>,
+          errorElement: <ErrorPage/>
         },
         {
           path:'/auth/register',
-          Component: Register
+          element: <Register/>
         }
       ]
     },
     {
-        path: '/*',
-        Component: ErrorPage
+        path: '*',
+        element: <ErrorPage/>
     }
 ]);

@@ -1,22 +1,24 @@
-import React, { use, useRef } from 'react';
+import React, { use } from 'react';
 import { AuthContext } from '../../provider/AuthProvider';
 import { toast } from 'react-toastify';
+import { useParams } from 'react-router';
 const ForgetPassword = () => {
     const {forgetPassword} = use(AuthContext);
-    const emailRef = useRef();
+    const {email} = useParams();
 
     const handleForgetPassword = e =>{
         e.preventDefault();
-        const email = emailRef.current.value;
+        // const email = emailRef.current.value;
         forgetPassword(email).then(()=>{
             toast.info(`A reset password email has been sent to ${email}`);
             setTimeout(()=>{
-                window.location.href = 'https://mail.google.com';
+                window.open('https://mail.google.com', '_blank');
             },2000)
             
         })
         .catch(error=>{
             console.log(error.message);
+            toast.error(error.message);
         })
     }
 
@@ -25,7 +27,7 @@ const ForgetPassword = () => {
             <h2 className="text-3xl font-bold">Forget Password</h2>
             <form onSubmit={handleForgetPassword} className='fieldset space-y-2 py-3'>
                 <label className='text-sm font-bold'>Email</label>
-                <input type="email" name='email' ref={emailRef} placeholder='Your email' className='w-full p-3 border rounded-md dark:border-gray-300 bg-base-100' />
+                <input type="email" name='email' defaultValue={email} placeholder='Your email' className='w-full p-3 border rounded-md dark:border-gray-300 bg-base-100' />
                 <button type='submit' className='mx-auto btn btn-primary max-w-40'>Reset Password</button>
             </form>
         </div>

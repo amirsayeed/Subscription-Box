@@ -20,56 +20,7 @@ const SubscriptionServiceDetails = () => {
 
     return (
         <div className='bg-base-200 pb-10'>
-        {/* <div className="hero min-h-screen py-10">
-        <div className="hero-content flex-col lg:flex-row gap-5 items-start">
-            <div>
-                <img
-                src={banner}
-                className="max-w-lg min-h-screen object-cover rounded-lg shadow-2xl"
-                />
-            </div>
-            <div className='flex flex-col gap-2'>
-            <h1 className="text-5xl font-bold">{name}</h1>
-            <div className='flex gap-5'>
-                <p>{ratings}/5</p>
-                <p>Reviews: {number_of_reviews}</p>
-            </div>
-            
-            <div className='flex gap-5'>
-                <p>${price}</p>
-                <span> / </span>
-                <p>{frequency}</p>
-            </div>
-            <p>Category: {tech_category}</p>
-            <p className="py-4">
-                {description}
-            </p>
-            <div className='flex flex-col md:flex-row justify-between gap-4'>
-                <div className='space-y-1'>
-                    <p className='text-lg font-semibold'>Features:</p>
-                    <ul className='list-disc list-inside'>
-                    {
-                        features.map((feature,idx)=><li key={idx}>{feature}</li>)
-                    }
-                </ul>
-                </div>
-                <div className='space-y-1'>
-                    <p className='text-lg font-semibold'>Benefits:</p>
-                    <ul className='list-disc list-inside'>
-                    {
-                        subscription_benefits.map((benefit,idx)=><li key={idx}>{benefit}</li>)
-                    }
-                </ul>
-                </div>
-            </div>
-              
-            <div className='flex justify-center mt-4'>
-                <button className="btn btn-primary max-w-sm">Subscribe</button>
-            </div>
-            
-            </div>
-        </div>
-        </div> */}
+        
         <div>
             <SubscriptionServiceDetailsCard serviceInfo={serviceInfo}/>
         </div>
