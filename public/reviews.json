@@ -1,0 +1,24 @@
+[
+    {
+      "id": 1,
+      "product": "Smart Home Box",
+      "reviewer": "Nowroze Ahmed",
+      "rating": 5,
+      "comment": "I loved the voice-controlled assistant and smart plugs. The devices were super easy to set up. Already looking forward to next box!"
+    },
+    {
+      "id": 2,
+      "product": "Gamer’s Paradise",
+      "reviewer": "Tanjina Rahman",
+      "rating": 4,
+      "comment": "The gear is definitely worth more than the price I paid. Only reason for 4 stars is I wish there was more RGB stuff in this month’s box. Still amazing overall!"
+    },
+    {
+      "id": 3,
+      "product": "Tech Gadget Box",
+      "reviewer": "Shafayet Karim",
+      "rating": 5,
+      "comment": "My favorite was the AI translator — it’s already helped me during travel! The box feels curated by people who truly understand what’s cool and functional."
+    }
+  ]
+  

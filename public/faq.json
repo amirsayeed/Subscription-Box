@@ -1,0 +1,34 @@
+{
+    "faqs": [
+      {
+        "id": 1,
+        "question": "How does the subscription service work?",
+        "answer": "Our subscription service delivers curated tech boxes to your doorstep at your chosen frequency (monthly/quarterly/yearly). After selecting your preferred box, we'll ship it with carefully selected gadgets matching your tech interests. You can pause, modify, or cancel anytime."
+      },
+      {
+        "id": 2,
+        "question": "What's included in each subscription box?",
+        "answer": "Each box contains 3-5 premium tech products based on your selected category (Smart Home, Gaming, etc.). You'll receive a mix of devices, accessories, and exclusive digital content. Every box includes product guides and access to our expert support."
+      },
+      {
+        "id": 3,
+        "question": "Can I customize my subscription box?",
+        "answer": "Yes! After signing up, you'll complete a tech preference profile where you can specify device types, brands, and price ranges. Our algorithm personalizes selections while keeping some elements as fun surprises."
+      },
+      {
+        "id": 4,
+        "question": "Are there any hidden fees?",
+        "answer": "No hidden fees. The price shown includes all products, standard shipping, and taxes. Expedited shipping and international deliveries may incur additional charges clearly shown at checkout."
+      },
+      {
+        "id": 5,
+        "question": "How do I cancel my subscription?",
+        "answer": "You can cancel anytime from your account dashboard. We don't require lengthy forms or phone calls. Your cancellation will be effective immediately after your current billing period ends."
+      },
+      {
+        "id": 6,
+        "question": "Do you offer gift subscriptions?",
+        "answer": "Absolutely! Gift subscriptions are available for 3, 6, or 12-month periods. The recipient can customize their box preferences upon activation. We include personalized gift messaging with digital or physical gift cards."
+      }
+    ]
+  }

@@ -1,18 +1,8 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import SubscriptionServiceCard from '../SubscriptionServiceCard.jsx/SubscriptionServiceCard';
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
 
 
 const SubscriptionServices = ({subsData}) => {
-    useEffect(()=>{
-        AOS.init({
-            offset: 200,
-            duration: 600,
-            easing: 'ease-in-sine',
-            delay: 100,
-          });
-    },[])
 
     return (
         <div className='max-w-7xl mx-auto my-10 space-y-8' data-aos="fade-up">
