@@ -4,7 +4,7 @@ import { Link } from 'react-router';
 const SubscriptionServiceCard = ({subData}) => {
     const {thumbnail,name,tech_category,price,frequency} = subData;
     return (
-        <div className="card bg-base-100 shadow-md">
+        <div data-aos="fade-down" className="card bg-base-100 shadow-md">
         <figure>
             <img className='p-4 w-full h-[300px] object-cover'
             src={thumbnail}
