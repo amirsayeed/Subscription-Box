@@ -19,15 +19,17 @@ const SubscriptionServiceDetails = () => {
     }
 
     return (
-        <div className='bg-base-200 pb-10'>
-        
         <div>
-            <SubscriptionServiceDetailsCard serviceInfo={serviceInfo}/>
-        </div>
-        <div className='mt-4 space-y-3'>
-            <h2 className="text-2xl font-bold text-center">Customer's Review</h2>
-            <CustomerReview/>
-        </div>
+            <title>{`Subscription Box | Details | ${id} `}</title>
+            <div className='bg-base-200 pb-10'>
+            <div>
+                <SubscriptionServiceDetailsCard serviceInfo={serviceInfo}/>
+            </div>
+            <div className='mt-4 space-y-3'>
+                <h2 className="text-2xl font-bold text-center">Customer's Review</h2>
+                <CustomerReview/>
+            </div>
+            </div>
         </div>
     );
 };

@@ -47,7 +47,9 @@ const Login = () => {
     }
 
     return (
-        <div className="flex flex-col mx-auto max-w-md p-6 rounded-md sm:p-10 dark:bg-gray-50 dark:text-gray-800">
+        <div>
+            <title>Subscription Box | Login</title>
+            <div className="flex flex-col mx-auto max-w-md p-6 rounded-md sm:p-10 dark:bg-gray-50 dark:text-gray-800">
             <h1 className="my-3 text-4xl font-bold text-center">Log in</h1>
                 
             <form onSubmit={handleLogin} className="fieldset">
@@ -66,6 +68,7 @@ const Login = () => {
                 <Link to='/auth/register' className="hover:underline text-blue-400"> Sign up</Link>.
                 </p>
             </div>
+        </div>
         </div>
     );
 };

@@ -5,8 +5,22 @@ import { MdEmail } from 'react-icons/md';
 import { toast } from 'react-toastify';
 
 const ContactUs = () => {
+
+    const handleForm = e =>{
+        e.preventDefault();
+        const name = e.target.name.value;
+
+        if(name.length <= 5) {
+            toast.error('Name must be more than 5 characters');
+            return;
+        }
+
+        toast.success('Form submitted successfully.'); 
+    }
     
     return (
+        <div>
+        <title>Subscription Box | Contact Us</title>
         <div className="min-h-screen flex items-center justify-center dark:bg-gray-100 dark:text-gray-900">
             <div className="flex-1 grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
                 <div className="py-6 md:py-0 md:px-6">
@@ -28,19 +42,20 @@ const ContactUs = () => {
                         </p>
                     </div>
                 </div>
-                <form className="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
+                <form onSubmit={handleForm} className="flex flex-col py-6 space-y-6 md:py-0 md:px-6">
                     <label>Full name</label>
-                        <input type="text" placeholder="Leroy Jenkins" className="p-2 w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 bg-base-100" required />
+                        <input type="text" name='name' placeholder="Leroy Jenkins" className="p-2 w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 bg-base-100" required />
                     
                     <label className="mt-2">Email address</label>
-                        <input type="email" placeholder="leroy@jenkins.com" className="p-2 w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 bg-base-100" required/>
+                        <input type="email" name='email' placeholder="leroy@jenkins.com" className="p-2 w-full rounded-md shadow-sm focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 bg-base-100" required/>
                     
                     <label className="mt-2">Message</label>
-                        <textarea rows="4" className="p-2 w-full rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 bg-base-100"></textarea>
+                        <textarea rows="4" name='message' className="p-2 w-full rounded-md focus:ring focus:ring-opacity-75 focus:dark:ring-violet-600 bg-base-100" required></textarea>
                     
-                    <button onClick={()=>toast.success('Form submitted successfully.')} type="button" className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 dark:bg-violet-600 dark:text-gray-50 focus:dark:ring-violet-600 hover:dark:ring-violet-600">Submit</button>
+                    <button type="submit" className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 dark:bg-violet-600 dark:text-gray-50 focus:dark:ring-violet-600 hover:dark:ring-violet-600">Submit</button>
                 </form>
             </div>
+        </div>
         </div>
     );
 };

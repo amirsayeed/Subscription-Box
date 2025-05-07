@@ -53,6 +53,8 @@ const Register = () => {
     }
 
     return (
+        <div>
+        <title>Subscription Box | Register</title>
         <div className="flex flex-col mx-auto max-w-md p-6 rounded-md sm:p-10 dark:bg-gray-50 dark:text-gray-800">
             <h1 className="my-3 text-4xl font-bold text-center">Register</h1>
                 
@@ -92,6 +94,7 @@ const Register = () => {
                 <button onClick={handleGoogleLogin} className="btn w-full bg-primary text-white border-[#e5e5e5]">
                 <FcGoogle size={20}/> Login with Google</button>
             </div>
+        </div>
         </div>
     );
 };
