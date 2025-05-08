@@ -2,16 +2,17 @@ import React, { use } from 'react';
 import { Link, NavLink } from 'react-router';
 import { AuthContext } from '../../provider/AuthProvider';
 import { FaUserCircle } from 'react-icons/fa';
+import { toast } from 'react-toastify';
 
 const Navbar = () => {
     const {user,logOut} = use(AuthContext);
 
     const handleLogOut = () =>{
         logOut().then(()=>{
-            console.log('successfully logged out');
+            toast.success('Successfully logged out');
         })
         .catch(error=>{
-            console.log(error);
+            toast.error(error.message);
         })
     }
 

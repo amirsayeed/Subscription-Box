@@ -22,9 +22,9 @@ export const router = createBrowserRouter([
       children: [
         {
           index:true,
+          element: <Home/>,
           loader: ()=>fetch('../subscription.json'),
           hydrateFallbackElement: <Loading/>, 
-          element: <Home/>
         },
         {
           path: 'profile',
@@ -33,8 +33,8 @@ export const router = createBrowserRouter([
         {
           path: '/subscriptionService/:id',
           loader: ()=>fetch('../subscription.json'),
-          hydrateFallbackElement: <Loading/>,
-          element: <PrivateRoute><SubscriptionServiceDetails/></PrivateRoute>
+          element: <PrivateRoute><SubscriptionServiceDetails/></PrivateRoute>,
+          hydrateFallbackElement: <Loading/>
         },
         {
           path: 'contactUs',
@@ -53,7 +53,8 @@ export const router = createBrowserRouter([
         },
         {
           path:'/auth/forgetPassword/:email',
-          element: <ForgetPassword/>
+          element: <ForgetPassword/>,
+          errorElement:<ErrorPage/>
         },
         {
           path:'/auth/register',

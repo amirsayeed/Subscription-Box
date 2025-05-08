@@ -21,7 +21,7 @@ const ProfilePage = () => {
             toast.success("Profile updated successfully!");
         })
         .catch(error=>{
-            console.log(error);
+            toast.error(error);
         })
     }
 
