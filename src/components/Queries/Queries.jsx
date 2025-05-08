@@ -8,7 +8,7 @@ const Queries = () => {
             .then(data=>setQueries(data.faqs))
         },[])
     return (
-        <div className='my-20 w-11/12 mx-auto' data-aos="fade-up">
+        <div className='my-20' data-aos="fade-up">
             <h2 className="text-3xl font-bold text-center">Frequently Asked Questions</h2>
             <div className='space-y-3 mt-10 px-6'>
             {

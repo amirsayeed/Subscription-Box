@@ -10,13 +10,13 @@ const SubscriptionServiceCard = ({subData}) => {
             src={thumbnail}
             alt="Shoes" />
         </figure>
-        <div className="card-body space-y-2">
-            <h2 className="text-2xl font-semibold">{name}</h2>
-            <p>Category: {tech_category}</p>
-            <p>Price: ${price}</p>
-            <p>Frequency: {frequency}</p>
+        <div className="card-body space-y-1">
+            <h2 className="text-2xl font-bold">{name}</h2>
+            <p className='text-base font-medium'>Category: {tech_category}</p>
+            <p className='text-base font-medium'>Price: ${price}</p>
+            <p className='text-base font-medium'>Frequency: {frequency}</p>
             <div className="card-actions">
-            <Link to={`/subscriptionService/${subData.id}`} className="btn btn-primary w-full">View More</Link>
+            <Link to={`/subscriptionService/${subData.id}`} className="btn btn-primary w-28 mx-auto rounded-2xl">View More</Link>
             </div>
         </div>
         </div>

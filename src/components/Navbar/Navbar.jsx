@@ -21,7 +21,7 @@ const Navbar = () => {
                     <li><NavLink to='/contactUs'>Contact Us</NavLink></li>
                   </>
     return (
-        <div className="navbar bg-base-100 shadow-sm">
+        <div className="navbar bg-base-100">
             <div className="navbar-start">
                 <div className="dropdown">
                 <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -35,7 +35,7 @@ const Navbar = () => {
                 </div>
                 <div className='flex gap-2 items-center'>
                     <img className='w-12 h-10' src="https://img.icons8.com/fluency/96/subscription.png" alt="subscription"/>
-                    <a className="btn btn-ghost text-2xl font-bold">Subscription Box</a>
+                    <a className="hidden md:flex btn btn-ghost text-lg md:text-2xl font-bold">Subscription Box</a>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">

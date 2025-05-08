@@ -27,7 +27,6 @@ const Register = () => {
         }
         
         signUp(email,password).then(result=>{
-            console.log(result.user);
             setUser(result.user);
             toast.success("Registration successful!");
             navigate('/');
@@ -41,7 +40,6 @@ const Register = () => {
 
     const handleGoogleLogin = () =>{
         googleSignIn().then(result=>{
-            console.log(result.user);
             setUser(result.user);
             toast.success("Registration successful!");
             navigate('/');

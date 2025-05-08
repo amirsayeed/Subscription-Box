@@ -8,16 +8,16 @@ const SubscriptionServiceDetailsCard = ({serviceInfo}) => {
         toast.success("Congratulations! Subscribed successfully.")
     }
     return (
-        <div className="hero min-h-screen py-10">
-        <div className="hero-content flex-col lg:flex-row gap-5 items-start">
-            <div>
+        <div className="py-10">
+        <div className="flex flex-col lg:flex-row gap-7 items-start px-1">
+            <div className='lg:w-1/2'>
                 <img
                 src={banner}
-                className="max-w-lg min-h-screen object-cover rounded-lg shadow-2xl"
+                className="min-h-screen object-cover rounded-lg shadow-2xl"
                 />
             </div>
-            <div className='flex flex-col gap-2'>
-            <h1 className="text-5xl font-bold">{name}</h1>
+            <div className='lg:w-1/2 flex flex-col gap-2'>
+            <h1 className="text-3xl md:text-5xl font-bold">{name}</h1>
             <div className='flex gap-5'>
                 <p className='font-semibold'>Rating: {ratings}/5</p>
                 <p className='font-semibold'>Reviews: {number_of_reviews}</p>

@@ -15,7 +15,6 @@ const Login = () => {
         //console.log(email,password);
 
         signIn(email,password).then(result=>{
-            //console.log(result.user);
             setUser(result.user);
             toast.success('Login successful');
             navigate(`${location.state ? location.state : '/'}`);
@@ -36,13 +35,13 @@ const Login = () => {
 
     const handleGoogleLogin = () =>{
         googleSignIn().then(result=>{
-            console.log(result.user);
             setUser(result.user);
             navigate(`${location.state ? location.state : '/'}`);
             toast.success('Login successful');
         })
         .catch(error=>{
             console.log(error);
+            toast.error(error.message);
         })
     }
 

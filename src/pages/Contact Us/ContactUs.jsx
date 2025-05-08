@@ -22,7 +22,7 @@ const ContactUs = () => {
         <div>
         <title>Subscription Box | Contact Us</title>
         <div className="min-h-screen flex items-center justify-center dark:bg-gray-100 dark:text-gray-900">
-            <div className="flex-1 grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
+            <div className="flex-1 grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x py-2">
                 <div className="py-6 md:py-0 md:px-6">
                     <h1 className="text-4xl font-bold">Get in touch</h1>
                     <p className="pt-2 pb-4">Fill in the form to start a conversation</p>
