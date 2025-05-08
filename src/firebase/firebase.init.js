@@ -6,12 +6,12 @@ import {
 } from "firebase/auth";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyC1WcUpHg9IE9o7UW-uuPj-t5PrKBkGCZ4",
-    authDomain: "subscription-box-edd92.firebaseapp.com",
-    projectId: "subscription-box-edd92",
-    storageBucket: "subscription-box-edd92.firebasestorage.app",
-    messagingSenderId: "199728064896",
-    appId: "1:199728064896:web:ab9c2b8f90aff40668f965"
+    apiKey: import.meta.env.VITE_apiKey,
+    authDomain: import.meta.env.VITE_authDomain,
+    projectId: import.meta.env.VITE_projectId,
+    storageBucket: import.meta.env.VITE_storageBucket,
+    messagingSenderId: import.meta.env.VITE_messagingSenderId,
+    appId: import.meta.env.VITE_appId
 };
 
 const app = initializeApp(firebaseConfig);

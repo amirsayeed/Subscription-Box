@@ -25,8 +25,8 @@ const SubscriptionServiceDetails = () => {
             <div>
                 <SubscriptionServiceDetailsCard serviceInfo={serviceInfo}/>
             </div>
-            <div className='mt-4 space-y-3'>
-                <h2 className="text-2xl font-bold text-center">Customer's Review</h2>
+            <div className='my-8 space-y-3'>
+                <h2 className="text-3xl font-bold text-center">Customer's Review</h2>
                 <CustomerReview/>
             </div>
             </div>

@@ -1,5 +1,5 @@
 import React, { use, useState } from 'react';
-import { FaUserCircle } from 'react-icons/fa';
+import { FaStar, FaUserCircle } from 'react-icons/fa';
 import { AuthContext } from '../../provider/AuthProvider';
 
 
@@ -20,7 +20,7 @@ const CustomerReview = () => {
         setReviewCus([...reviewCus,reviewInfo]);
     }
     return (
-        <div className='flex flex-col md:flex-row items-start justify-center gap-5'>
+        <div className='flex flex-col md:flex-row items-start justify-around gap-5 mt-5'>
             <div className='flex-1 max-w-md p-6 bg-base-100 shadow-lg rounded-md'>
             <form onSubmit={handleReview} className='fieldset'>
                 <label className='text-sm'>Rating</label>
@@ -40,13 +40,22 @@ const CustomerReview = () => {
             </div>
             <div className='flex flex-col gap-3'>
                 {reviewCus.map((review,idx) => (
-                <div key={idx} className='p-2 space-y-1'>
-                    {user?.photoURL ? 
-                        <img src={user.photoURL} alt="user" className='w-8 h-8 rounded-full' />
-                     : <FaUserCircle size={20} />
-                     }
-                    <p className='text-sm'>{review.rating}/5</p>
-                    <p className='text-base'>{review.review}</p>
+                <div key={idx} className='max-w-sm bg-base-300 shadow-md p-5 space-y-1'>
+
+                   <div className='flex justify-between'>
+                    <div className='flex items-center gap-1'>
+                        {user?.photoURL ? 
+                            <img src={user.photoURL} alt="user" className='w-8 h-8 rounded-full' />
+                        : <FaUserCircle size={20} />
+                        }
+                        <p className='font-bold'>{user?.displayName ? user.displayName : ''}</p>
+                    </div>
+                    <div className='flex items-start text-orange-300 font-bold'>
+                        <span className='text-base'>{review.rating}/5</span>
+                        <span><FaStar size={20} /></span>
+                    </div>
+                   </div>
+                    <p className='text-base break-words'>{review.review.slice(0,150)}</p>
                 </div>
                 ))}
             </div>

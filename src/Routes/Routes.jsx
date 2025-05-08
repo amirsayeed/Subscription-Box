@@ -13,13 +13,12 @@ import Register from "../pages/Register/Register";
 import ContactUs from "../pages/Contact Us/ContactUs";
 import PrivateRoute from "../provider/PrivateRoute";
 import ForgetPassword from "../pages/ForgetPassword/ForgetPassword";
-import Navbar from "../components/Navbar/Navbar";
-import Footer from "../components/Footer/Footer";
 
 export const router = createBrowserRouter([
     {
       path: "/",
       element: <Root/>,
+      errorElement: <ErrorPage/>,
       children: [
         {
           index:true,
@@ -46,6 +45,7 @@ export const router = createBrowserRouter([
     {
       path:'/auth',
       element: <AuthLayout/>,
+      errorElement: <ErrorPage/>,
       children: [
         {
           path:'/auth/login',
@@ -60,9 +60,5 @@ export const router = createBrowserRouter([
           element: <Register/>
         }
       ]
-    },
-    {
-        path: '*',
-        element: <ErrorPage/>
     }
 ]);
