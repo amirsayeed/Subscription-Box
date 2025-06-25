@@ -6,6 +6,14 @@ A responsive and interactive subscription service website offering various theme
 
 👉 [Visit the Live Website](https://subscription-box-edd92.web.app/)
 
+## 📦 Tech Stack
+
+- **React** – UI library
+- **React Router DOM** – Client-side routing
+- **Firebase** – Authentication & hosting
+- **Tailwind CSS** – Utility-first styling
+- **DaisyUI** – Prebuilt UI components
+
 ## 🎯 Purpose
 
 Subscription Box is a comprehensive service platform that enables users to:
@@ -51,19 +59,16 @@ Subscription Box is a comprehensive service platform that enables users to:
 - 404 Error page
 - Consistent AuthLayout
 
-## 📦 Tech Stack & Packages
+## 📦 Dependencies
 
-### Frontend
-
-- `react`- UI Library
-- `react-router-dom`- Client-side routing
-- `firebase`-Authentication & Hosting
-- `tailwindcss`- Utility-first CSS
-- `daisyui`- UI Components
-
-- `aos` - Scroll animations
-- `react-icons` - Icon library
-- `react-toastify` - Notifications
+- **react**
+- **react-router-dom**
+- **firebase**
+- **tailwindcss**
+- **daisyui**
+- **aos** – Scroll animations
+- **react-icons** – Icon library
+- **react-toastify** – Toast notifications
 
 ## 🛠️ Local Development Setup
 
