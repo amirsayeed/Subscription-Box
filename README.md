@@ -64,3 +64,43 @@ Subscription Box is a comprehensive service platform that enables users to:
 - `aos` - Scroll animations
 - `react-icons` - Icon library
 - `react-toastify` - Notifications
+
+## 🛠️ Local Development Setup
+
+### 1. Clone the Repository:
+
+```bash
+git clone https://github.com/amirsayeed/Subscription-Box.git
+```
+
+### 2. Install Dependencies
+
+```bash
+cd Subscription-Box-Client
+npm install
+```
+
+### 3. Create Environment File
+
+Create a .env.local file in the directory root with the following:
+
+```bash
+VITE_FIREBASE_API_KEY=your_firebase_api_key
+VITE_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+VITE_FIREBASE_PROJECT_ID=your_project_id
+VITE_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+VITE_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+VITE_FIREBASE_APP_ID=your_app_id
+```
+
+🔐 These values are in Firebase Project Settings after creating firebase project.
+
+### 4. Run the Development Server
+
+```bash
+npm run dev
+```
+
+The app will be running at: http://localhost:5173
+
+Make sure Firebase project is properly configured with authentication enabled for full functionality.
